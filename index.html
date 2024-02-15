@@ -3,10 +3,53 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+   rel="icon"
+   href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐻</text></svg>"
+  />
+
   <title>Brinkley's Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
  </head>
- <body>
-  <h1>Brinkley's Site</h1>
-  <p>Hello, this seems to be working. Yay!</p>
+ <body class="gap-5 antialiased grid justify-center bg-[#d7b68131] sm:mt-40 mt-10 text-red-950 duration-200">
+  <div>
+   <h1 class="font-bold">Brinkley Hill</h1>
+   <h2 class="italic">Software Developer & Tester</h2>
+  </div>
+  <hr class="border-red-950" />
+  <div class="grid gap-2">
+   <h3 class="font-semibold">Projects</h3>
+   <a href="/something" class="hover:underline">Boardlo</a>
+   <a href="/something" class="hover:underline">Discrr</a>
+   <a href="/something" class="hover:underline">Apex Collision</a>
+  </div>
+  <hr class="border-red-950" />
+  <div class="grid gap-2">
+   <a href="/about" class="hover:underline">About</a>
+   <a href="/email" class="hover:underline">Email</a>
+   <a href="/gospel" class="hover:underline">Gospel</a>
+  </div>
+  <a href="https://kmalexander.com/2020/10/21/homann-a-free-18th-century-cartography-brush-set-for-fantasy-maps/" target="_blank">
+   <img src="assests/ship.png" alt="old-timey ship" width="300" class="red-filter" />
+  </a>
+  <div class="flex justify-center gap-9 items-center">
+   <a href="https://twitter.com/brinkhill_"><img src="assests/twitter.svg" alt="twitter bird" width="24" class="red-filter"></img></a>
+   <a href="https://github.com/brinkhill"><img src="assests/github.svg" alt="github cat" width="24" class="red-filter"></img></a>
+   <a href="https://www.linkedin.com/in/brinkhill/"><img src="assests/linkedin.svg" alt="linkedin logo" width="24" class="red-filter"></img></a>
+  </div>
  </body>
+ <style>
+  @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+
+  * {
+   font-family: "Bitter", serif;
+   font-optical-sizing: auto;
+   font-weight: 500;
+   font-style: normal;
+  }
+
+  .red-filter {
+   filter: invert(6%) sepia(72%) saturate(2629%) hue-rotate(345deg) brightness(105%) contrast(101%);
+  }
+ </style>
 </html>
